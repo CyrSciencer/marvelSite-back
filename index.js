@@ -27,6 +27,6 @@ serv.all("*", (req, res) => {
   res.status(404).json("Route not found");
 });
 //Serv starting
-serv.listen(3000, () => {
+serv.listen(process.env.PORT, () => {
   console.log("Server has started");
 });
